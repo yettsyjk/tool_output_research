@@ -1,18 +1,18 @@
-#Auxiliary Modules for Metasploit framework
+# Auxiliary Modules for Metasploit framework
 **metasploit platform for using security tools and exploits**
 
-**metasploit platform for using security tools and exploits**
-###Port Scanner
+** metasploit platform for using security tools and exploits**
+### Port Scanner
 msf > use auxiliary/scanner/portscan/tcp
 msf > set RHOSTS 10.10.10.0/24
 msf > run
 
-###DNS Enumeration
+### DNS Enumeration
 msf > use auxiliary/gather/dns_enum
 msf > set DOMAIN target.tgt
 msf > run
 
-###FTP Server
+### FTP Server
 msf > use auxiliary/server/ftp
 msf > set FTPROOT /tmp/ftproot
 msf > run

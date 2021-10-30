@@ -1,7 +1,5 @@
 # Auxiliary Modules for Metasploit framework
 **metasploit platform for using security tools and exploits**
-
-**metasploit platform for using security tools and exploits**
 ### Port Scanner
 msf > use auxiliary/scanner/portscan/tcp
 msf > set RHOSTS 10.10.10.0/24

@@ -1,0 +1,25 @@
+### On the terminal, create a test file and view the permissions running ls -l:
+touch test.txt
+ls -al test.txt
+
+### On the terminal, change user to admin, switch directory as shown below and list the content. Two directories will be losred
+
+su admin
+cd /home/admin/Desktop
+ls
+
+The permissions of a file or directory can be changed either using explicit annotation or through the octal notation method. The first method sets the permissions using the following modifiers:
+
+● u - owner
+
+● g - group
+
+● o - other users
+
+● a - all users
+
+To allow user admin to read the guest_notes.txt file, use o+r to change file permissions. The command needs to be run with sudo because the permissions are being changed by a user that does not own the file.
+
+sudo chmod o+r guest_notes.txt
+ls ‑al
+cat guest_notes.txt | tee ~/guest_permissions.txt
